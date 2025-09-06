@@ -3,6 +3,45 @@ import time
 from utils.detection_api import DetectionAPI
 from utils.parking_logic import ParkingLogic
 import datetime
+def main():
+    st.title("🤖 AI Auto Detection Mode")
+    st.markdown("*Automated vehicle detection using computer vision*")
+    
+    detection_api = init_detection_api()
+    
+    # Check if running in cloud
+    if detection_api.is_cloud_deployment:
+        show_cloud_deployment_message()
+        return
+    
+    # ... rest of your existing code
+
+def show_cloud_deployment_message():
+    """Show message for cloud deployment users"""
+    st.info("🌐 **Cloud Deployment Detected**")
+    
+    st.markdown("""
+    The AI Auto Detection Mode requires a local AI detection server running on your machine, 
+    which is not available in this cloud deployment.
+    
+    ### To use AI Auto Detection:
+    
+    1. **Download the application** to your local machine
+    2. **Install dependencies**: `pip install -r requirements.txt`
+    3. **Download YOLO models**:
+       - `yolo11n.pt` for vehicle detection
+       - `best.pt` for license plate detection
+    4. **Start the detection server**: `python server.py`
+    5. **Run locally**: `streamlit run app.py`
+    
+    ### For now, please use **Manual Mode**:
+    - Go back to the main page
+    - Use the "🎛️ Controls" panel to manually park vehicles
+    - Fill in vehicle details manually
+    """)
+    
+    if st.button("🏠 Return to Main Page"):
+        st.switch_page("app.py")
 
 st.set_page_config(
     page_title="Auto Mode - Vehicle Vacancy Vault",
@@ -371,3 +410,4 @@ def show_server_instructions():
 
 if __name__ == "__main__":
     main()
+
