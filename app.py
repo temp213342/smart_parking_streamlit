@@ -7,6 +7,27 @@ from utils.data_manager import DataManager
 from utils.parking_logic import ParkingLogic
 # Add this improved error handling at the top of your server.py
 import logging
+import os
+
+# Environment detection
+IS_CLOUD_DEPLOYMENT = (
+    os.getenv('STREAMLIT_SHARING_MODE') is not None or
+    os.getenv('STREAMLIT_SERVER_HEADLESS') == 'true' or
+    'streamlit.app' in os.getenv('HOSTNAME', '') or
+    'streamlit.app' in os.getenv('SERVER_NAME', '')
+)
+
+def show_control_panel():
+    st.markdown("### 🎛️ Controls")
+    
+    # Conditionally show Auto Mode button
+    if not IS_CLOUD_DEPLOYMENT:
+        if st.button("🤖 Auto Mode", help="AI-powered automatic vehicle detection"):
+            st.switch_page("pages/04_🤖_Auto_Mode.py")
+    else:
+        st.info("🤖 Auto Mode is only available in local deployment")
+    
+    # ... rest of control panel code
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -1444,3 +1465,4 @@ def show_reservation_details(slot_data):
 
 if __name__ == "__main__":
     main()
+
