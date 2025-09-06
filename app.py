@@ -1049,12 +1049,13 @@ def health_check():
     })
 
 if __name__ == '__main__':
-    print("Smart Parking Detection Server Starting...")
-    print("Make sure to have your YOLO models ready:")
-    print("1. yolo11n.pt (for vehicle detection) - will be downloaded automatically")
-    print("2. best.pt (for license plate detection) - place in same directory")
-    print("Server will run on http://localhost:8000")
+    # print("Smart Parking Detection Server Starting...")
+    # print("Make sure to have your YOLO models ready:")
+    # print("1. yolo11n.pt (for vehicle detection) - will be downloaded automatically")
+    # print("2. best.pt (for license plate detection) - place in same directory")
+    # print("Server will run on http://localhost:8000")
     app.run(host='localhost', port=8000, debug=False)
+
 # Page config
 st.set_page_config(
     page_title="Vehicle Vacancy Vault",
@@ -1443,4 +1444,3 @@ def show_reservation_details(slot_data):
 
 if __name__ == "__main__":
     main()
-
