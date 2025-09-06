@@ -1,0 +1,194 @@
+[
+  {
+    "date": "01-01-2025",
+    "name": "New Year's Day",
+    "rushFrom": "00:00",
+    "rushTo": "23:59"
+  },
+  {
+    "date": "26-01-2025",
+    "name": "Republic Day",
+    "rushFrom": "08:00",
+    "rushTo": "14:00"
+  },
+  {
+    "date": "02-02-2025",
+    "name": "Vasant Panchami",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "26-02-2025",
+    "name": "Maha Shivaratri",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "13-03-2025",
+    "name": "Holika Dahana",
+    "rushFrom": "09:00",
+    "rushTo": "22:00"
+  },
+  {
+    "date": "14-03-2025",
+    "name": "Holi",
+    "rushFrom": "09:00",
+    "rushTo": "20:00"
+  },
+  {
+    "date": "28-03-2025",
+    "name": "Jamat Ul-Vida",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "30-03-2025",
+    "name": "Chaitra Sukhladi / Ugadi / Gudi Padwa",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "31-03-2025",
+    "name": "Eid-ul-Fitr",
+    "rushFrom": "08:00",
+    "rushTo": "21:00"
+  },
+  {
+    "date": "06-04-2025",
+    "name": "Rama Navami",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "10-04-2025",
+    "name": "Mahavir Jayanti",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "18-04-2025",
+    "name": "Good Friday",
+    "rushFrom": "08:00",
+    "rushTo": "16:00"
+  },
+  {
+    "date": "12-05-2025",
+    "name": "Buddha Purnima",
+    "rushFrom": "09:00",
+    "rushTo": "18:00"
+  },
+  {
+    "date": "07-06-2025",
+    "name": "Eid ul-Adha (Bakrid)",
+    "rushFrom": "08:00",
+    "rushTo": "21:00"
+  },
+  {
+    "date": "06-07-2025",
+    "name": "Muharram",
+    "rushFrom": "07:00",
+    "rushTo": "19:00"
+  },
+  {
+    "date": "09-08-2025",
+    "name": "Raksha Bandhan",
+    "rushFrom": "10:00",
+    "rushTo": "18:00"
+  },
+  {
+    "date": "15-08-2025",
+    "name": "Independence Day",
+    "rushFrom": "08:00",
+    "rushTo": "14:00"
+  },
+  {
+    "date": "16-08-2025",
+    "name": "Janmashtami",
+    "rushFrom": "08:00",
+    "rushTo": "23:00"
+  },
+  {
+    "date": "27-08-2025",
+    "name": "Ganesh Chaturthi",
+    "rushFrom": "08:00",
+    "rushTo": "21:00"
+  },
+  {
+    "date": "05-09-2025",
+    "name": "Milad-un-Nabi / Onam",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "29-09-2025",
+    "name": "Maha Saptami",
+    "rushFrom": "06:00",
+    "rushTo": "23:59"
+  },
+  {
+    "date": "30-09-2025",
+    "name": "Maha Ashtami",
+    "rushFrom": "06:00",
+    "rushTo": "23:59"
+  },
+  {
+    "date": "01-10-2025",
+    "name": "Maha Navami",
+    "rushFrom": "06:00",
+    "rushTo": "23:59"
+  },
+  {
+    "date": "02-10-2025",
+    "name": "Mahatma Gandhi Jayanti / Dussehra",
+    "rushFrom": "08:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "07-10-2025",
+    "name": "Maharishi Valmiki Jayanti",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "20-10-2025",
+    "name": "Diwali",
+    "rushFrom": "10:00",
+    "rushTo": "23:59"
+  },
+  {
+    "date": "22-10-2025",
+    "name": "Govardhan Puja",
+    "rushFrom": "09:00",
+    "rushTo": "18:00"
+  },
+  {
+    "date": "23-10-2025",
+    "name": "Bhai Duj",
+    "rushFrom": "10:00",
+    "rushTo": "18:00"
+  },
+  {
+    "date": "05-11-2025",
+    "name": "Guru Nanak Jayanti",
+    "rushFrom": "09:00",
+    "rushTo": "19:00"
+  },
+  {
+    "date": "24-11-2025",
+    "name": "Guru Tegh Bahadur's Martyrdom Day",
+    "rushFrom": "09:00",
+    "rushTo": "17:00"
+  },
+  {
+    "date": "25-12-2025",
+    "name": "Christmas Day",
+    "rushFrom": "09:00",
+    "rushTo": "22:00"
+  },
+  {
+    "date": "31-12-2025",
+    "name": "New Year's Eve",
+    "rushFrom": "00:00",
+    "rushTo": "23:59"
+  }
+]

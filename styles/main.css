@@ -1,0 +1,241 @@
+/* Streamlit App Custom Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Root variables for theming */
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #3b82f6;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #1a1a2e;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+}
+
+/* Light theme styles */
+[data-theme="light"] {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: rgba(30, 41, 59, 0.7);
+}
+
+/* Main app styling */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom button styles */
+.stButton > button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+/* Parking slot button styles */
+div[data-testid="column"] button {
+    width: 100% !important;
+    height: 80px !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    border-radius: 12px !important;
+    border: 2px solid transparent !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Available slot styling */
+div[data-testid="column"] button[aria-label*="Available"] {
+    background: linear-gradient(135deg, #10b981, #059669) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Occupied slot styling */
+div[data-testid="column"] button[aria-label*="Occupied"] {
+    background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3) !important;
+}
+
+/* Reserved slot styling */
+div[data-testid="column"] button[aria-label*="Reserved"] {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Hover effects for parking slots */
+div[data-testid="column"] button:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Price card styling */
+.price-card {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.price-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.price-card p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.price-card small {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Metric styling */
+div[data-testid="metric-container"] {
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+/* Form styling */
+.stSelectbox > div > div {
+    border-radius: 8px;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+.stTextInput > div > div > input {
+    border-radius: 8px;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    padding: 12px;
+}
+
+.stNumberInput > div > div > input {
+    border-radius: 8px;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Success/Error message styling */
+.stAlert {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background: linear-gradient(180deg, var(--bg-secondary), var(--bg-primary));
+}
+
+/* Chart container styling */
+.js-plotly-plot {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.dataframe {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+/* Progress bar styling */
+.stProgress .st-bo {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    div[data-testid="column"] button {
+        height: 60px !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Hide Streamlit branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
